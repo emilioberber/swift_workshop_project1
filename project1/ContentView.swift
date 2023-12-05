@@ -2,14 +2,14 @@
 //  ContentView.swift
 //  project1
 //
-//  Created by Gdaalumno on 05/12/23.
+//  Created by Emilio Berber on 05/12/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Hello, this is Emilio")
             .padding()
     }
 }
