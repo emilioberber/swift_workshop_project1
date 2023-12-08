@@ -8,7 +8,7 @@
 import Foundation
 
 struct SocialMedia: Identifiable {
-    var id = UUID().uuidString // FORMA DE CREAR INDENTIFICABLE PARA DESPUÈS LLAMARL EN EL FOREACH
+    var id = UUID().uuidString // FORMA DE CREAR INDENTIFICABLE PARA DESPUÈS LLAMARL EN EL ForEach
     var media: String
     var url: String
 }
