@@ -11,7 +11,7 @@ import SwiftUI
 struct project1App: App {
     var body: some Scene {
         WindowGroup {
-            PersonProfilePicture(profilePictureUrl: Person.myProfile.profilepic, name: Person.myProfile.name)
+            ContentView()
         }
     }
 }

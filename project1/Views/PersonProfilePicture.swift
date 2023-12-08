@@ -21,14 +21,14 @@ struct PersonProfilePicture: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200)
                 .clipShape(Circle())
-                .overlay(Color.blue, in:
+                .overlay(Color.gray, in:
                             Circle()
                     .stroke(lineWidth: 5)
                          )
             Text(name)
                 .font(.title)
                 .padding(6)
-                .background(Color.blue, in:
+                .background(Color.gray, in:
                                 RoundedRectangle(cornerRadius: 10))
         }
         

@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, this is Emilio")
-            .padding()
+        TabView{
+            ProfileNavigation(profile: Person.myProfile)
+                .tag("profile")
+                .tabItem {
+                    Label("My Profile", systemImage: "person.circle")
+                }
+            MySocialMedia(socialMedia: SocialMedia.mySocialMedia)
+                .tag("Social Media")
+                .tabItem {
+                    Label("My Profile", systemImage: "network")
+                }
+        }
     }
 }
 

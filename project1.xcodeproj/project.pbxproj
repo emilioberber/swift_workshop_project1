@@ -16,6 +16,10 @@
 		9BA681BF2B212FBD0067C6C7 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA681BE2B212FBD0067C6C7 /* Project.swift */; };
 		9BA681C22B21305B0067C6C7 /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA681C12B21305B0067C6C7 /* SocialMedia.swift */; };
 		9BA681C42B21392A0067C6C7 /* PersonProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA681C32B21392A0067C6C7 /* PersonProfilePicture.swift */; };
+		9BAB67922B227E1300AE7ABA /* ProfileDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB67912B227E1300AE7ABA /* ProfileDescription.swift */; };
+		9BAB67942B228A9300AE7ABA /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB67932B228A9300AE7ABA /* ProfileNavigation.swift */; };
+		9BAB67962B228BE600AE7ABA /* ProjectDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB67952B228BE600AE7ABA /* ProjectDetails.swift */; };
+		9BAB67982B2292ED00AE7ABA /* MySocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB67972B2292ED00AE7ABA /* MySocialMedia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,11 @@
 		9BA681BE2B212FBD0067C6C7 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		9BA681C12B21305B0067C6C7 /* SocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
 		9BA681C32B21392A0067C6C7 /* PersonProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfilePicture.swift; sourceTree = "<group>"; };
+		9BAB67912B227E1300AE7ABA /* ProfileDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDescription.swift; sourceTree = "<group>"; };
+		9BAB67932B228A9300AE7ABA /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
+		9BAB67952B228BE600AE7ABA /* ProjectDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetails.swift; sourceTree = "<group>"; };
+		9BAB67972B2292ED00AE7ABA /* MySocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySocialMedia.swift; sourceTree = "<group>"; };
+		9BAB67992B229B7A00AE7ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 		9B2095D02B1FE0E600724240 /* project1 */ = {
 			isa = PBXGroup;
 			children = (
+				9BAB67992B229B7A00AE7ABA /* Info.plist */,
 				9B2095D12B1FE0E600724240 /* project1App.swift */,
 				9B2095D32B1FE0E600724240 /* ContentView.swift */,
 				9B2095E02B1FEA4E00724240 /* Model */,
@@ -84,6 +94,10 @@
 			children = (
 				9B2095E32B1FEB6200724240 /* UIelements.swift */,
 				9BA681C32B21392A0067C6C7 /* PersonProfilePicture.swift */,
+				9BAB67912B227E1300AE7ABA /* ProfileDescription.swift */,
+				9BAB67932B228A9300AE7ABA /* ProfileNavigation.swift */,
+				9BAB67952B228BE600AE7ABA /* ProjectDetails.swift */,
+				9BAB67972B2292ED00AE7ABA /* MySocialMedia.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,12 +182,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAB67922B227E1300AE7ABA /* ProfileDescription.swift in Sources */,
 				9B2095E42B1FEB6200724240 /* UIelements.swift in Sources */,
 				9B2095D42B1FE0E600724240 /* ContentView.swift in Sources */,
 				9BA681BD2B212EAC0067C6C7 /* Person.swift in Sources */,
 				9BA681C22B21305B0067C6C7 /* SocialMedia.swift in Sources */,
 				9BA681C42B21392A0067C6C7 /* PersonProfilePicture.swift in Sources */,
+				9BAB67982B2292ED00AE7ABA /* MySocialMedia.swift in Sources */,
+				9BAB67942B228A9300AE7ABA /* ProfileNavigation.swift in Sources */,
 				9BA681BF2B212FBD0067C6C7 /* Project.swift in Sources */,
+				9BAB67962B228BE600AE7ABA /* ProjectDetails.swift in Sources */,
 				9B2095D22B1FE0E600724240 /* project1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +323,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"project1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = project1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,7 +335,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.berber.project1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = project1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,6 +352,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"project1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = project1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,7 +364,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.berber.project1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = project1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
