@@ -52,6 +52,15 @@ struct ProfileDescription: View {
                 }
             }
             .padding(.horizontal)
+            
+            Divider()
+            
+            LeadingAlignedText(text: "Last trip to NYC:")
+                .font(.headline)
+            
+            PhotosCarousel(photosNames: profile.photos)
+                .frame(height: 450)
+            
         }
         
     }

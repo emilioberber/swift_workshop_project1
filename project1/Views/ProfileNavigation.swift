@@ -15,6 +15,7 @@ struct ProfileNavigation: View {
         NavigationView {
             ProfileDescription(profile: profile)
                 .navigationTitle("My Profile")
+            
         }
     }
 }

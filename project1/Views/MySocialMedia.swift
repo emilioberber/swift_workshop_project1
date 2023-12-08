@@ -13,10 +13,16 @@ struct MySocialMedia: View {
     var body: some View {
         List {
             ForEach(socialMedia) { media in
-                Link(destination: URL(string: media.url) ?? URL(string:"www.google.com")!){
-                    Text(media.media)
+                Link(destination: URL(string: media.url) ??
+                    URL(string:"www.google.com")!){
+                    HStack {
+                        Image(media.iconName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 40)
+                        Text(media.media)
+                    }
                 }
-                
             }
         }
     }
