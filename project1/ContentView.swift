@@ -18,7 +18,12 @@ struct ContentView: View {
             MySocialMedia(socialMedia: SocialMedia.mySocialMedia)
                 .tag("Social Media")
                 .tabItem {
-                    Label("My Profile", systemImage: "network")
+                    Label("Social Medias", systemImage: "network")
+                }
+            ProjectsList(projects: Person.myProfile.projects)
+                .tag("Projects")
+                .tabItem {
+                    Label("Projects", systemImage: "folder")
                 }
         }
     }
